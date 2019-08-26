@@ -12,8 +12,8 @@ pool:
 steps:
 #- script: curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 #  displayName: 'Install Azure CLI'
-- script: az login --service-principal --username "3d587273-dcac-47f1-b714-72f244c67c52"  --password "8ec3a20c-e55e-4341-abec-28d57eab3be1" --tenant "59b2865a-7fb8-4ccb-ab68-72cbca88fc48"
-  displayName: 'Log into Azure with service prinicipal'  
+#- script: az login --service-principal --username "3d587273-dcac-47f1-b714-72f244c67c52a"  --password "8ec3a20c-e55e-4341-abec-28d57eab3be1b" --tenant "59b2865a-7fb8-4ccb-ab68-72cbca88fc48c"
+#  displayName: 'Log into Azure with service prinicipal'  
 
 
 - script: terraform init
