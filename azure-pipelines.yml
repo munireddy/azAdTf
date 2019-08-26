@@ -27,8 +27,9 @@ steps:
 - script: terraform init
   displayName: 'Terraform Init Step' 
 - script: terraform plan  -input=false
-  displayName: 'Terraform Init Step'   
-
+  displayName: 'Terraform Plan Step'   
+- script: terraform apply  -input=false
+  displayName: 'Terraform Apply Step'  
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
