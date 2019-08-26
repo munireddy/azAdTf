@@ -16,6 +16,7 @@ steps:
 - script: echo export ARM_TENANT_ID="59b2865a-7fb8-4ccb-ab68-72cbca88fc48" >> ~/.bash_profile
 - script: source ~/.bash_profile
   displayName: 'Run a one-line script'
+- script: cat ~/.bash_profile  
 - script: echo ${ARM_CLIENT_ID} && echo $ARM_CLIENT_ID
 #- script: curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 #  displayName: 'Install Azure CLI'
