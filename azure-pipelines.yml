@@ -28,7 +28,7 @@ steps:
   displayName: 'Terraform Init Step' 
 - script: terraform plan  -input=false
   displayName: 'Terraform Plan Step'   
-- script: terraform apply  -input=false
+- script: terraform apply  -auto-approve
   displayName: 'Terraform Apply Step'  
 - script: |
     echo Add other tasks to build, test, and deploy your project.
