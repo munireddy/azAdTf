@@ -23,29 +23,11 @@ steps:
 - script: az login --service-principal --username "3d587273-dcac-47f1-b714-72f244c67c52"  --password "8ec3a20c-e55e-4341-abec-28d57eab3be1" --tenant "59b2865a-7fb8-4ccb-ab68-72cbca88fc48"
   displayName: 'Log into Azure with service prinicipal'  
 
-- task: AzureCLI@1
-      displayName: Terraform Deploy
-      inputs:
-        azureSubscription: 6a47561d-9fe1-414e-85b7-99cd2ce0ce46
-        scriptLocation: inlineScript
-        workingDirectory: /home/ubuntu
-        addSpnToEnvironment: true
-        inlineScript: |
-            endDate=`date -d "30 minutes" '+%Y-%m-%dT%H:%MZ'`
-            # Init terraform env
-            terraform init -input=false 
-
-            # Fail on errors, output every command and result to the log
-            set -e -x
-
-            # Generate a Terraform plan
-            terraform plan -input=false     
-
-
-
 
 - script: terraform init
   displayName: 'Terraform Init Step' 
+- script: terraform plan  -input=false
+  displayName: 'Terraform Init Step'   
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
