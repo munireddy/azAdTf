@@ -1,5 +1,4 @@
-# azvmsswithlogin
-Terraform project with login. 
+# Azure Dev Ops Pipeline with Terraform.
 To use this code, you need to export the required variable in the .bash_profile of the machine from where you want to execute this code.
 
 ----------------------------Steps to login to Auzre through terrafrom -----------------
@@ -18,12 +17,9 @@ To use this code, you need to export the required variable in the .bash_profile 
     appId is the client_id defined above.
     password is the client_secret defined above.
     tenant is the tenant_id defined above.
-3. Get your subscription id from Azure protal. Then Reaplce the ARM_SUBSCRIPTION_ID with that. Other Three listed below 
-   will be repalced with the value you get from Step #2.  Add these four export statements to your .bash_profile
-   export ARM_CLIENT_ID="11111111-0000-0000-0000-000000000000"
-   export ARM_CLIENT_SECRET="ASDF-0000-0000-0000-000000000000"
-   export ARM_SUBSCRIPTION_ID="00000000-0000-0000-0000-000000000000"
-   export ARM_TENANT_ID="22222222-0000-0000-0000-000000000000"
-4. source ~/.bash_profile  
-After this step all the credentails needed to login in to AUZRE with Terraform are avaiable. You can execute any terraform plan now.
+3. Create your own repo in github .. say yourRepo. 
+4. Copy the code in my repo (azvmssPLWithTerraform) to your repo yourRepo. 
+5. Update prodiver.tf with the your credentials you have creted for your azure account in step #2.
+6. Create a azure devops pipeline. Source code for this repo should be pointing to yourRepo.
+7. You are all set to use this repo. 
 
