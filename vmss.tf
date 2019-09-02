@@ -146,7 +146,7 @@ resource "azurerm_virtual_machine_scale_set" "vmss" {
 
 resource "azurerm_role_assignment" "test" {
   scope                = "${azurerm_virtual_machine_scale_set.vmss.name}"
-  role_definition_name = "Virtual Machine Administrator Login"
+  role_definition_name = "Owner"
   principal_id         = "nineuser@autonomicpro.com"
 }
 
