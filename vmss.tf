@@ -144,11 +144,11 @@ resource "azurerm_virtual_machine_scale_set" "vmss" {
  tags = "${var.tags}"
 }
 
-resource "azurerm_role_assignment" "test" {
-  scope                = "${azurerm_virtual_machine_scale_set.vmss.name}"
-  role_definition_name = "Owner"
-  principal_id         = "nineuser@autonomicpro.com"
-}
+#resource "azurerm_role_assignment" "test" {
+#  scope                = "${azurerm_virtual_machine_scale_set.vmss.name}"
+#  role_definition_name = "Owner"
+#  principal_id         = "nineuser@autonomicpro.com"
+#}
 
 
 
