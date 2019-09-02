@@ -114,6 +114,7 @@ resource "azurerm_virtual_machine_scale_set" "vmss" {
       #!/bin/bash
       touch /tmp/file1.txt
       sudo snap install docker
+      sudo curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
       EOF
  }
 
