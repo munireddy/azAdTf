@@ -137,6 +137,8 @@ resource "azurerm_virtual_machine_scale_set" "vmss" {
  extension {
     name                 = "AADLoginForLinux"
     publisher            = "Microsoft.Azure.ActiveDirectory.LinuxSSH"
+    type                 = "AADLoginForLinux"
+    type_handler_version = "1.0"
  }
 
  tags = "${var.tags}"
