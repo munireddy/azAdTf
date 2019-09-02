@@ -12,7 +12,7 @@ resource "random_string" "fqdn" {
 }
 
 resource "azurerm_virtual_network" "vmss" {
- name                = "Muni2-vnet0"
+ name                = "vmss-vnet"
  address_space       = ["10.2.0.0/16"]
  location            = "${var.location}"
  resource_group_name = "${azurerm_resource_group.vmss.name}"
