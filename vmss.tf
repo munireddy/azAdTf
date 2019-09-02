@@ -140,7 +140,7 @@ resource "azurerm_virtual_machine_scale_set" "vmss" {
     type                 = "AADLoginForLinux"
     type_handler_version = "1.0"
  }
- assignment {
+ role_assignment {
     role_definition_id = "Virtual Machine Administrator Login"
     principal_id       = "nineuser@autonomicpro.com" 
  }
