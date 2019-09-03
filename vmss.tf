@@ -155,6 +155,7 @@ resource "azurerm_virtual_machine_scale_set" "vmss" {
 
 provisioner "local-exec" {
     command = "az role assignment create --role \"Virtual Machine Administrator Login\" --assignee "\ nineuser@autonomicpro.com\" --scope \"vmscaleset\""
+
 }
 
  tags = "${var.tags}"
