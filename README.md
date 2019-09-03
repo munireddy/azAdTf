@@ -4,7 +4,7 @@ For this we need to install "az vm extension set" and "az role assignment create
     2. "az role assignment create" to Create role assginment to the user you wanted 
 
 
-#added    asdf a commnet for build
+#added    asdf a commnet for build #
 
 
 # Azure Dev Ops Pipeline with Terraform.
