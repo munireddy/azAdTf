@@ -5,6 +5,7 @@ For this we need to install "az vm extension set" and "az role assignment create
 
 
 #added    asdf a commnet for build #
+New line added 
 
 
 # Azure Dev Ops Pipeline with Terraform.
