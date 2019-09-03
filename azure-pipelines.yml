@@ -1,7 +1,4 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+# Piple line to Azure TF Ad
 
 trigger:
 - master
@@ -19,4 +16,4 @@ steps:
 - script: |
     echo End of Terraform pipeline script
     echo End of the steps for this job
-  displayName: '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+  displayName: 'Muni !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
