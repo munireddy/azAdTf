@@ -120,11 +120,12 @@ resource "azurerm_virtual_machine_scale_set" "vmss" {
       echo export ARM_SUBSCRIPTION_ID=\"6a47561d-9fe1-414e-85b7-99cd2ce0ce46\" >> /home/"${var.admin_user}"/.bash_profile
       echo export ARM_TENANT_ID=\"59b2865a-7fb8-4ccb-ab68-72cbca88fc48\" >> /home/"${var.admin_user}"/.bash_profile
       source /home/"${var.admin_user}"/.bash_profile
-      #sudo apt install unzip
-      #sudo wget https://releases.hashicorp.com/terraform/0.12.7/terraform_0.12.7_linux_amd64.zip
-      #unzip terraform_0.12.7_linux_amd64.zip
-      #sudo mv terraform /usr/local/bin/
-      cp provider.tf .      
+      sudo cp provider.tf  /home/"${var.admin_user}"
+      sudo apt install unzip
+      sudo wget https://releases.hashicorp.com/terraform/0.12.7/terraform_0.12.7_linux_amd64.zip
+      unzip terraform_0.12.7_linux_amd64.zip
+      sudo mv terraform /usr/local/bin/
+      #cp provider.tf  /home/"${var.admin_user}"
       EOF
  }
 
