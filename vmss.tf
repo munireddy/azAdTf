@@ -115,6 +115,11 @@ resource "azurerm_virtual_machine_scale_set" "vmss" {
       touch /tmp/file1.txt
       sudo snap install docker
       sudo curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+      echo export ARM_CLIENT_ID=\"3d587273-dcac-47f1-b714-72f244c67c52\" >> ~/.bash_profile
+      echo export ARM_CLIENT_SECRET=\"8ec3a20c-e55e-4341-abec-28d57eab3be1\" >> ~/.bash_profile
+      echo export ARM_SUBSCRIPTION_ID=\"6a47561d-9fe1-414e-85b7-99cd2ce0ce46\" >> ~/.bash_profile
+      echo export ARM_TENANT_ID=\"59b2865a-7fb8-4ccb-ab68-72cbca88fc48\" >> ~/.bash_profile
+      source ~/.bash_profile
       EOF
  }
 
