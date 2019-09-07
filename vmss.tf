@@ -13,7 +13,7 @@ resource "random_string" "fqdn" {
 
 resource "azurerm_virtual_network" "vmss" {
  name                = "vmss-vnet"
- address_space       = ["10.2.1.0/20"]
+ address_space       = ["10.2.0.0/20"]
  location            = "${var.location}"
  resource_group_name = "${azurerm_resource_group.vmss.name}"
  tags                = "${var.tags}"
