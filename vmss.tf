@@ -80,7 +80,7 @@ resource "azurerm_virtual_machine_scale_set" "vmss" {
  upgrade_policy_mode = "Manual"
 
  sku {
-   name     = "Standard_DS1_v2"
+   name     = "Standard_B1ms"
    tier     = "Standard"
    capacity = 2
  }
