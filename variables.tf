@@ -14,7 +14,7 @@ variable "tags" {
 
 variable "resource_group_name" {
  description = "The name of the resource group in which the resources will be created"
- default     = "Muni2"
+ default     = "paidGroup1"
 }
 variable "application_port" {
    description = "The port that you want to expose to the external load balancer"
@@ -28,5 +28,5 @@ variable "admin_user" {
 
 variable "admin_password" {
    description = "Default password for admin account"
-   default = "MLK123ATL!!ffD$"
+   default = "Azure12345678$"
 }
