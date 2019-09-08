@@ -1,3 +1,24 @@
+#Create a user in Active Directory
+#Save the intial password
+#Go to the resource group in which The reosurces are created.
+#Add role (Virtual Machine Administrator Login)  for the newly created user for this reosurce group.
+# Then the VMs created in this resource group should allow login trhoug AD Credentials.
+
+
+######## How to change change AZURE subscription 
+Change the subscription
+
+  az account set -s  <<subscription id>>
+
+confirm the change in subscription with the below command 
+
+  az account show
+
+Create a Service Principal
+    az ad sp create-for-rbac --name ServicePrincipalName3
+
+#######
+
 #Adding capability to inlcude Ad users to the resources
 For this we need to install "az vm extension set" and "az role assignment create"  
     1. "az vm extension set"      to enable AD users login to your Reosurces
