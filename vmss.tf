@@ -26,6 +26,14 @@ resource "azurerm_subnet" "vmss" {
  address_prefix       = "10.2.1.0/24"
 }
 
+#resource "azuread_user" "createuser" {
+#  user_principal_name = "user18@autonomicpro.com"
+#  display_name        = "Eighteen User"
+#  mail_nickname       = "UserEighteen"
+#  password            = "SecretP@sswd88!"
+#}
+
+
 resource "azurerm_public_ip" "vmss" {
  name                         = "vmss-public-ip"
  location                     = "${var.location}"
